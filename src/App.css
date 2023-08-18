@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  font-family: "Manrope", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  background-color: hsl(210, 46%, 95%);
+  height: 100vh;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  background-color: white;
+  width: 375px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px hsl(217, 19%, 35%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Typography */
+
+.text-dark {
+  color: hsl(217, 19%, 35%);
+}
+
+.text-light {
+  color: hsl(214, 17%, 51%);
+}
+
+/* Image Component Styling */
+
+.img-container img {
+  width: 100%;
+  height: 275px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* TextSection Component Styling */
+
+.text-container {
+  padding: 30px;
+}
+
+.heading {
+  margin-bottom: 15px;
+}
+
+.paragraph {
+  font-size: 15px;
+}
+
+/* ShareSection Component Styling */
+
+.share-container {
+  padding: 0 30px 15px 30px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.avatar-details {
+  font-size: 14px;
+  flex-grow: 2;
+  margin-left: 20px;
+}
+
+.share-logo {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(212, 23%, 90%);
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip {
+  width: 200px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1024px) {
+  .app {
+    display: flex;
+    width: 950px;
+    font-size: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .img-container img {
+    width: 346px;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+
+  .paragraph {
+    font-size: 18px;
   }
 }
