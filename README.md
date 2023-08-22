@@ -20,7 +20,7 @@ See the live project in action: https://react-article-component.netlify.app/
 - React
 - HTML
 - CSS
-- JS
+- JavaScript
 - MUI
 
 ## Getting Started
