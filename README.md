@@ -44,4 +44,4 @@ Contributions are welcome! If you have any improvements or fixes, feel free to s
 - Open a pull request.
 
 
-This project was completed as a part of the [Frontend Mentor](https://www.frontendmentor.io/) challenges. 
+This project was developed to showcase a React-based Article Component using MUI Tooltip. Feel free to explore and modify the code.
